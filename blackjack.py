@@ -36,8 +36,8 @@ class Game:
                 has_blackjack = (self.player_hand.get_value() == 21)
                 choice = ""
                 if not has_blackjack:
-                    choice = input("Hit or Stick: ").lower()
-                if choice in ['hit', 'h']:
+                    choice = input("Hit(h), Stick(s), or Double Down(d): ").lower()
+                if choice in ['h']:
                     self.player_hand.add_card(self.deck.deal())
                     self.player_hand.display()
                     print()
@@ -47,7 +47,11 @@ class Game:
                         self.losses += 1
                         game_over = True
 
-                else:
+                elif choice in ['s','d']:
+                    if choice == 'd':
+                        self.player_hand.add_card(self.deck.deal())
+                        self.player_hand.display()
+                        print()
                     player_hand_value = self.player_hand.get_value()
 
                     while self.dealer_hand.get_value() < 17:
