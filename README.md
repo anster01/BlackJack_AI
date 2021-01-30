@@ -18,6 +18,6 @@ First, how to play Blackjack:
 Second, some of the simplifications I've made to do this project:
 1. As this is an experiment seeing how this strategy fairs against the house, there will only be one player and the dealer.
 2. Only one deck of cards will be used, and the deck will be shuffled after every round.
-
+3. I will not be considering bets in terms of amount of money. Instead I will assign discrete values to wins, ties and losses.
 
 
