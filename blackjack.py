@@ -1,9 +1,22 @@
 import matplotlib.pyplot as plt
+import json
 
 from blackjack_card import Card
 from blackjack_deck import Deck
 from blackjack_hand import Hand
   
+
+
+
+with open('chart_pairs.json') as file1:
+    chart_pairs = json.load(file1)
+with open('chart_ace.json') as file2:
+    chart_ace = json.load(file2)
+with open('chart_totals.json') as file3:
+    chart_totals = json.load(file3)
+
+
+
 
 class Game:
     def __init__(self):
@@ -151,4 +164,4 @@ if __name__ == "__main__":
     game.play()
     scoreToAdd = (game.wins-game.losses)/game.num
     with open("player_scores.txt","a") as file:
-        file.write(str(scoreToAdd))
+        file.write(str(scoreToAdd)+"\n")
