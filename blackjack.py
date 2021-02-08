@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 from blackjack_card import Card
 from blackjack_deck import Deck
 from blackjack_hand import Hand
@@ -8,6 +10,7 @@ class Game:
         self.wins = 0
         self.losses = 0
         self.ties = 0
+        self.num = 0
 
     def play(self):
         playing = True
@@ -131,6 +134,7 @@ class Game:
                                 print("You Win!")
                                 self.wins += 1
                     game_over = True
+            self.num += 1
             again = input("Play Again? [Y/N] ")
             if again.lower() == "n":
                 playing = False
@@ -145,3 +149,6 @@ class Game:
 if __name__ == "__main__":
     game = Game()
     game.play()
+    scoreToAdd = (game.wins-game.losses)/game.num
+    with open("player_scores.txt","a") as file:
+        file.write(str(scoreToAdd))
