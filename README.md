@@ -13,7 +13,7 @@ Some of the simplifications I've made to do this project:
 3. I will not be considering bets in terms of amount of money. Instead I will assign discrete values to wins, ties and losses.  
 
 
-The chart below from https://towardsdatascience.com/winning-blackjack-using-machine-learning-681d924f197c shows the optimal strategy to Blackjack:
+The chart below from https://towardsdatascience.com/winning-blackjack-using-machine-learning-681d924f197c shows the optimal strategy to Blackjack:  
 ![optimalchart](blackjack_optimal_chart.png)
 
 
