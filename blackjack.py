@@ -164,4 +164,9 @@ if __name__ == "__main__":
     game.play()
     scoreToAdd = (game.wins-game.losses)/game.num
     with open("player_scores.txt","a") as file:
-        file.write(str(scoreToAdd)+"\n")
+        file.write("\n"+str("{:.2f}".format(scoreToAdd)))
+    file1 = open("player_scores.txt","r")
+    scores = file1.read().split("\n")
+    plt.hist(scores,100)
+    plt.show()
+    
