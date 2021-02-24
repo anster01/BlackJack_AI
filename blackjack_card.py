@@ -1,7 +1,6 @@
 class Card:
-    def __init__(self, suit, value):
-        self.suit = suit
+    def __init__(self, value):
         self.value = value
 
     def __repr__(self):
-        return " of ".join((self.value, self.suit))
+        return "".join((self.value))
