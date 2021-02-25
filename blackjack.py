@@ -231,6 +231,8 @@ if __name__ == "__main__":
                 scores.append(float(line))
         scores.sort()
         plt.hist(scores,20)
+        plt.xlabel("Score")
+        plt.ylabel("Count")
         plt.show()
 
     else:
@@ -242,5 +244,7 @@ if __name__ == "__main__":
                 scores.append(float(line))
         scores.sort()
         plt.hist(scores,20)
+        plt.xlabel("Score")
+        plt.ylabel("Count")
         plt.show()
     
