@@ -20,3 +20,6 @@ The chart below from https://towardsdatascience.com/winning-blackjack-using-mach
 Over the course of a few months (yes that's how long it would take to get enough data) I will play a few games a day and record my wins(+1) and losses(-1). Then my total for the day is (wins+losses)/num_of_games. This will get appended to a list of my previous scores and a histogram will made. Hopefully a nice Normal Distribution can be seen showing the Central Limit Theorem with a mean of just below zero.  
 
 Then I will repeat this same process for the AI and see if the the mean is slightly higher than mine.
+
+The histogram below shows the distribution of scores the optimal AI achieves after 200 rounds. (Love the Central Limit Theorem in action :)) It's mean it just below 0, showing that the house edge is always there, however its mean is higher than when I was playing myself. 
+![aihistogram](ai_histogram.png)
