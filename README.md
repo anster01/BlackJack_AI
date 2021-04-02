@@ -21,5 +21,8 @@ Over the course of a few months (yes that's how long it would take to get enough
 
 Then I will repeat this same process for the AI and see if the the mean is slightly higher than mine.
 
-The histogram below shows the distribution of scores the optimal AI achieves after 200 rounds. (Love the Central Limit Theorem in action :)) It's mean it just below 0, showing that the house edge is always there, however its mean is higher than when I was playing myself. 
-![aihistogram](ai_histogram.png)
+The histogram below shows the distribution of scores the optimal AI achieves after 200 rounds. (Love the Central Limit Theorem in action :)) It's mean it just below 0, showing that the house edge is always there. The mean of around -0.25 also shows the House Edge of 0.5%. I had let the AI play 50 games each round and so it would be expected to have a mean of -0.25.
+![aihistogram](ai_histogram.png)  
+
+From the histogram below, it can clearly be seen that I am definitely a lot more erratic with my winnings than an optimal AI. However it is obvious that my mean losses are much greater than that of the AI (although I do occasionally win).
+![playerhistogram](player_histogram.png)
